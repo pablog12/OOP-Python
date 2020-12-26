@@ -1,0 +1,28 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[scripts]
+'gui-hbox' = 'python gui/QHBoxLayout.py'
+'gui-vbox' = 'python gui/QVBoxLayout.py'
+'gui-grid' = 'python gui/QGridLayout.py'
+'gui-grid2' = 'python gui/QGridLayout-span.py'
+'gui-form' = 'python gui/QFormLayout.py'
+'gui-nested' = 'python gui/Nested.py'
+'gui-stacked' = 'python gui/QStackedLayout.py'
+'gui-tabs' = 'python gui/QTabWidget.py'
+'gui-main' = 'python gui/MainWindow.py'
+'gui-dialog' = 'python gui/QDialog.py'
+'gui-signal' = 'python gui/SignalSlots.py'
+'gui-calc' = 'python gui/calculator/pycalc.py'
+'qt-ui' = 'python qt-ui/qt-ui.py'
+
+[dev-packages]
+
+[packages]
+pyqt5 = "*"
+pyside6 = "*"
+
+[requires]
+python_version = "3.8"
