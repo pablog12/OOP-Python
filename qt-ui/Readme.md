@@ -36,7 +36,7 @@ if __name__ == "__main__":
     sys.exit(app.exec_())
 ```
 
-# Conver .ui to code using pyside2-uic
+# Conver .ui to code using pyside-uic
 `brew install pyside-tools`
 
 
