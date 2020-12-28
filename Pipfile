@@ -23,14 +23,15 @@ verify_ssl = true
 [dev-packages]
 pyinstaller = "*"
 buildozer = "*"
+cython = "==0.29.19"
+libtoolize = "*"
+libtool = "*"
 
 [packages]
 pyqt5 = "*"
 pyside6 = "*"
-kivy = {extras = ["full"], version = "*"}
+kivy = {extras = ["full"],version = "*"}
 kivy-examples = "*"
-"kivy-deps.sdl2" = "*"
-"kivy-deps.glew" = "*"
 
 [requires]
 python_version = "3.8"
