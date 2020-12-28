@@ -17,12 +17,16 @@ verify_ssl = true
 'gui-signal' = 'python gui/SignalSlots.py'
 'gui-calc' = 'python gui/calculator/pycalc.py'
 'qt-ui' = 'python qt-ui/qt-ui.py'
+'qt-ui-file' = 'python qt-ui/qt-ui-direct.py'
+'kivy' = 'python kivy/main.py'
 
 [dev-packages]
 
 [packages]
 pyqt5 = "*"
 pyside6 = "*"
+kivy = {extras = ["base"], version = "*"}
+buildozer = "*"
 
 [requires]
 python_version = "3.8"

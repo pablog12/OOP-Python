@@ -4,6 +4,19 @@ from PySide6.QtUiTools import QUiLoader
 from PySide6.QtWidgets import QApplication
 from PySide6.QtCore import QFile, QIODevice
 
+class Main(QApplication):
+    """PyCalc's View (GUI)."""
+    def __init__(self):
+        """View initializer."""
+        super().__init__()
+
+    def _connectSignals(self):
+        """Connect signals and slots."""
+        self._view.buttons['triggerButton'].clicked.connect(self._message)
+
+    def _message(self):
+        print("You clicked the button!")
+
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     ui_file_name = "form.ui"
@@ -21,3 +34,5 @@ if __name__ == "__main__":
     window.show()
 
     sys.exit(app.exec_())
+
+    Main(window)
