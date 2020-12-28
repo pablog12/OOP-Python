@@ -21,12 +21,19 @@ verify_ssl = true
 'kivy' = 'python kivy/main.py'
 
 [dev-packages]
+pyinstaller = "*"
+buildozer = "*"
 
 [packages]
 pyqt5 = "*"
 pyside6 = "*"
-kivy = {extras = ["base"], version = "*"}
-buildozer = "*"
+kivy = {extras = ["full"], version = "*"}
+kivy-examples = "*"
+"kivy-deps.sdl2" = "*"
+"kivy-deps.glew" = "*"
 
 [requires]
 python_version = "3.8"
+
+[pipenv]
+allow_prereleases = true
